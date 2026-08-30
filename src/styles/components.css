@@ -399,3 +399,27 @@
     display: block;
   }
 }
+
+@media (max-width: 560px) {
+  .brand-title {
+    font-size: 1rem;
+  }
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+  .brand-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .site-header .nav-actions .btn-get-quote-trigger {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .nav-actions .btn-get-quote-trigger {
+    display: none;
+  }
+}
+
