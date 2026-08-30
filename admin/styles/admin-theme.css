@@ -1,0 +1,117 @@
+/* ==========================================================================
+   GREEN PULSE ENERGY - ADVANCED ADMIN CMS THEME SYSTEM
+   Modes: Dark (Obsidian) | Light (Clean SaaS) | System Default
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  /* Default: Modern Dark SaaS Theme (Linear / Vercel Grade) */
+  --admin-bg-base: #090b0e;
+  --admin-bg-sidebar: #0f1217;
+  --admin-bg-surface: #151921;
+  --admin-bg-elevated: #1c222c;
+  --admin-bg-hover: rgba(255, 255, 255, 0.06);
+  --admin-bg-active: rgba(16, 185, 129, 0.14);
+
+  /* Borders & Radiance */
+  --admin-border-subtle: rgba(255, 255, 255, 0.08);
+  --admin-border-strong: rgba(255, 255, 255, 0.16);
+  --admin-border-accent: rgba(16, 185, 129, 0.4);
+
+  /* Typography */
+  --admin-text-primary: #f3f5f8;
+  --admin-text-secondary: #9aa4b2;
+  --admin-text-muted: #626e80;
+  --admin-text-inverse: #0c0e12;
+
+  /* Brand Accents */
+  --admin-accent-emerald: #10b981;
+  --admin-accent-emerald-hover: #059669;
+  --admin-accent-emerald-light: #34d399;
+  --admin-accent-gold: #f59e0b;
+  --admin-accent-cyan: #06b6d4;
+  --admin-accent-danger: #ef4444;
+  --admin-accent-danger-bg: rgba(239, 68, 68, 0.12);
+
+  /* Status Colors */
+  --admin-status-published: #10b981;
+  --admin-status-draft: #f59e0b;
+  --admin-status-archived: #64748b;
+
+  /* Fonts */
+  --admin-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --admin-font-heading: 'Plus Jakarta Sans', sans-serif;
+  --admin-font-mono: 'Space Grotesk', monospace;
+
+  /* Radii & Shadows */
+  --admin-radius-sm: 6px;
+  --admin-radius-md: 10px;
+  --admin-radius-lg: 16px;
+  --admin-radius-full: 9999px;
+  --admin-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --admin-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --admin-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+  --admin-glow-emerald: 0 0 20px rgba(16, 185, 129, 0.25);
+
+  /* Layout Constants */
+  --admin-sidebar-width: 260px;
+  --admin-topbar-height: 60px;
+}
+
+/* Light Theme Variable Overrides */
+[data-theme="light"] {
+  --admin-bg-base: #f4f6f8;
+  --admin-bg-sidebar: #ffffff;
+  --admin-bg-surface: #ffffff;
+  --admin-bg-elevated: #ebf0f4;
+  --admin-bg-hover: rgba(0, 0, 0, 0.04);
+  --admin-bg-active: rgba(16, 185, 129, 0.1);
+
+  --admin-border-subtle: rgba(0, 0, 0, 0.08);
+  --admin-border-strong: rgba(0, 0, 0, 0.15);
+  --admin-border-accent: rgba(16, 185, 129, 0.45);
+
+  --admin-text-primary: #0f172a;
+  --admin-text-secondary: #475569;
+  --admin-text-muted: #8292a4;
+  --admin-text-inverse: #ffffff;
+
+  --admin-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --admin-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --admin-shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--admin-font-sans);
+  background-color: var(--admin-bg-base);
+  color: var(--admin-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100vh;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--admin-font-heading);
+  color: var(--admin-text-primary);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}

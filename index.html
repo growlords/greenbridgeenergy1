@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Pulse Energy | The Future of Clean Solar Technology</title>
+  <meta name="description" content="Green Pulse Energy delivers high-efficiency, architectural solar panel systems and intelligent clean energy solutions for residential, commercial, and utility-scale projects." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/index.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/hero.css" />
+  <link rel="stylesheet" href="/src/styles/pages.css" />
+  <link rel="stylesheet" href="/src/styles/animations.css" />
+</head>
+<body>
+
+  <!-- Ambient Floating Energy Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- =========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" id="brand-logo-link">
+        <svg class="brand-icon" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="42" stroke="#10b981" stroke-width="3" stroke-dasharray="8 6" opacity="0.8"/>
+          <ellipse cx="50" cy="50" rx="46" ry="20" stroke="#059669" stroke-width="2" transform="rotate(-30 50 50)" opacity="0.6"/>
+          <path d="M50 16 L78 32 L78 68 L50 84 L22 68 L22 32 Z" fill="#061a11" stroke="#10b981" stroke-width="3"/>
+          <circle cx="50" cy="50" r="10" fill="#f59e0b"/>
+          <circle cx="50" cy="50" r="4" fill="#ffffff"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">GREEN PULSE</span>
+          <span class="brand-tagline">ENERGY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about">About Us</a></li>
+          <li><a href="#services" class="nav-link" id="nav-link-services">Services</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Our Projects</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Top Header CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-get-quote-trigger" id="nav-quote-btn">
+          <span>Get a Quote</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobile-nav-drawer">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About Us</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#projects" class="mobile-nav-link">Our Projects</a>
+    <a href="#contact" class="mobile-nav-link">Contact Us</a>
+    <a href="#contact" class="btn btn-primary btn-get-quote-trigger" style="margin-top: 1rem;">
+      <span>Get a Free Quote</span>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       PAGE 1: HOME PAGE
+       ========================================================================= -->
+  <main id="page-home" class="page-view">
+    
+    <!-- 3D Hero Section -->
+    <section class="hero-section" id="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Left Side Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span class="hero-badge-text">Next-Generation Photovoltaics</span>
+          </div>
+
+          <h1 class="hero-title">
+            Powering a <span class="hero-title-highlight">Greener Tomorrow.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Smart solar solutions designed to help homes and businesses generate cleaner energy, reduce costs, and build a sustainable future.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#services" class="btn btn-primary" id="hero-cta-explore">
+              <span>Explore Our Services</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-cta-consult">
+              <span>Get a Free Consultation</span>
+            </a>
+          </div>
+
+          <!-- Hero Trust Metrics -->
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <span class="trust-number">22.8%</span>
+              <span class="trust-label">Peak Module Yield</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">25-Yr</span>
+              <span class="trust-label">Linear Warranty</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">$0 Down</span>
+              <span class="trust-label">Flexible Financing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: 3D Anti-Gravity Solar Scene -->
+        <div class="hero-3d-wrapper">
+          <div class="hero-ambient-glow"></div>
+          
+          <!-- Floating Telemetry Badges with Anti-Gravity Animation -->
+          <div class="floating-telemetry-badge badge-pos-top-left">
+            <div class="telemetry-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+            </div>
+            <div class="telemetry-info">
+              <span class="telemetry-stat">N-Type TOPCon</span>
+              <span class="telemetry-tag">Anti-Reflective PV Cell</span>
+            </div>
+          </div>
+
+          <div class="floating-telemetry-badge badge-pos-bottom-right">
+            <div class="telemetry-icon-box" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="telemetry-info">
+              <span class="telemetry-stat">99.2% Efficient</span>
+              <span class="telemetry-tag">Smart IoT Inverter</span>
+            </div>
+          </div>
+
+          <!-- WebGL Three.js Container -->
+          <div class="hero-canvas-container" id="hero-3d-canvas"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Trusted Energy Statistics Bar -->
+    <section class="section-pad" id="sec-trusted-partners" style="padding-top: 0;">
+      <div class="container">
+        <div class="stats-banner">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-num-val stat-counter" data-target="10" data-suffix="+">0+</div>
+              <div class="stat-desc">Years Solar Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num-val stat-counter" data-target="500" data-suffix="+">0+</div>
+              <div class="stat-desc">Clean Installations</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num-val stat-counter" data-target="1.8" data-suffix=" MW+">0 MW+</div>
+              <div class="stat-desc">Clean Energy Generated</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num-val stat-counter" data-target="100" data-suffix="%">0%</div>
+              <div class="stat-desc">Sustainable Solutions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Why Solar? Interactive 3D Tilt Cards -->
+    <section class="section-pad" id="sec-why-solar">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>The Green Pulse Advantage</span>
+          </div>
+          <h2 class="section-title">Clean Energy. Smart Investment. Better Future.</h2>
+          <p class="section-subtitle">
+            Transitioning to solar isn't just an ecological choice — it's an intelligent financial asset providing lifetime energy security.
+          </p>
+        </div>
+
+        <div class="why-solar-grid">
+          <div class="why-card tilt-card">
+            <div class="why-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 6v12"/></svg>
+            </div>
+            <h3 class="why-card-title">Lower Electricity Costs</h3>
+            <p class="why-card-text">
+              Lock in fixed, predictable energy rates while drastically reducing or completely eliminating monthly utility bills from day one.
+            </p>
+          </div>
+
+          <div class="why-card tilt-card">
+            <div class="why-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+            </div>
+            <h3 class="why-card-title">Clean & Renewable Energy</h3>
+            <p class="why-card-text">
+              Harness infinite solar photon energy without greenhouse emissions, directly neutralizing hundreds of tons of carbon footprint.
+            </p>
+          </div>
+
+          <div class="why-card tilt-card">
+            <div class="why-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="why-card-title">Long-Term Savings</h3>
+            <p class="why-card-text">
+              With 25-30 year warranted equipment lifespans, solar systems deliver compounding returns exceeding standard market index funds.
+            </p>
+          </div>
+
+          <div class="why-card tilt-card">
+            <div class="why-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="why-card-title">Energy Independence</h3>
+            <p class="why-card-text">
+              Protect your home or enterprise against unpredictable utility rate hikes, rolling blackouts, and grid instabilities with smart storage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Interactive Solar Savings & ROI Calculator -->
+    <section class="section-pad" id="sec-calculator">
+      <div class="container">
+        <div class="calc-wrapper">
+          <div class="calc-grid">
+            
+            <!-- Controls Column -->
+            <div class="calc-controls">
+              <div>
+                <div class="section-tag" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #34d399;">
+                  <span>Precision Solar Modeling</span>
+                </div>
+                <h3 style="font-size: 2.2rem; color: #ffffff; margin-bottom: 0.75rem;">Estimate Your 25-Year Solar ROI</h3>
+                <p style="color: var(--color-text-inverse-muted); font-size: 0.95rem;">
+                  Adjust your current utility parameters to calculate real-time savings, system capacity, and carbon offsets.
+                </p>
+              </div>
+
+              <!-- Monthly Bill Slider -->
+              <div>
+                <div class="calc-group-label">
+                  <span>Current Monthly Electricity Bill</span>
+                  <span class="calc-display-val" id="calc-bill-display">$280</span>
+                </div>
+                <input type="range" min="80" max="1200" step="10" value="280" class="range-slider" id="calc-bill-slider" />
+              </div>
+
+              <!-- Property Type -->
+              <div>
+                <label class="calc-group-label"><span>Installation Type</span></label>
+                <select class="calc-select-input" id="calc-property-type">
+                  <option value="residential">Residential Solar Roof / Villa</option>
+                  <option value="commercial">Commercial Building / Enterprise</option>
+                </select>
+              </div>
+
+              <!-- Sunlight Exposure -->
+              <div>
+                <label class="calc-group-label"><span>Sunlight & Roof Exposure</span></label>
+                <div class="calc-radio-group">
+                  <div class="radio-chip">
+                    <input type="radio" id="exp-opt" name="sun-exposure" value="optimal" checked />
+                    <label for="exp-opt">High Sun (Unobstructed)</label>
+                  </div>
+                  <div class="radio-chip">
+                    <input type="radio" id="exp-mod" name="sun-exposure" value="moderate" />
+                    <label for="exp-mod">Moderate Sun</label>
+                  </div>
+                  <div class="radio-chip">
+                    <input type="radio" id="exp-shd" name="sun-exposure" value="shaded" />
+                    <label for="exp-shd">Partial Shade</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calculation Output Column -->
+            <div class="calc-output-card">
+              <div class="calc-hero-stat">
+                <span class="calc-hero-label">Estimated 25-Year Net Savings</span>
+                <div class="calc-hero-number" id="calc-savings-25yr">$68,450</div>
+              </div>
+
+              <div class="calc-metrics-quad">
+                <div class="calc-metric-box">
+                  <span class="c-m-label">Recommended System</span>
+                  <span class="c-m-val" id="calc-system-size">8.2 kW</span>
+                </div>
+                <div class="calc-metric-box">
+                  <span class="c-m-label">Est. Payback Timeline</span>
+                  <span class="c-m-val" id="calc-payback">4.1 Years</span>
+                </div>
+                <div class="calc-metric-box">
+                  <span class="c-m-label">Annual CO₂ Offset</span>
+                  <span class="c-m-val" id="calc-co2">5.1 Tons/yr</span>
+                </div>
+                <div class="calc-metric-box">
+                  <span class="c-m-label">Equiv. Trees Planted</span>
+                  <span class="c-m-val" id="calc-trees">96 Trees/yr</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary" id="calc-apply-quote-btn" style="width: 100%; padding: 1.1rem;">
+                <span>Lock In This Estimate & Get Quote</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Services Preview -->
+    <section class="section-pad" id="sec-home-services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>Comprehensive Solutions</span>
+          </div>
+          <h2 class="section-title">Our Clean Energy Services</h2>
+          <p class="section-subtitle">
+            From architectural residential rooftops to megawatt commercial microgrids, we engineer sustainable power systems that perform for decades.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card tilt-card">
+            <div class="service-card-head">
+              <div class="service-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+              </div>
+              <span class="service-badge-pill">Turnkey</span>
+            </div>
+            <div>
+              <h3 class="service-title">Solar Installation</h3>
+              <div class="service-tagline">Residential & Commercial Turnkey</div>
+              <p class="service-desc">
+                High-efficiency monocrystalline solar systems engineered for maximum yield, structural safety, and seamless architectural elegance.
+              </p>
+            </div>
+            <div class="service-card-footer">
+              <span class="service-warranty-tag">25-Yr System Warranty</span>
+              <a href="#services" class="btn-view-project">
+                <span>Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card tilt-card">
+            <div class="service-card-head">
+              <div class="service-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <span class="service-badge-pill">Popular</span>
+            </div>
+            <div>
+              <h3 class="service-title">Solar Rooftop Systems</h3>
+              <div class="service-tagline">Watertight Non-Invasive Racking</div>
+              <p class="service-desc">
+                Optimized rooftop installations tailored to slate, tile, metal, and flat membrane surfaces with micro-inverter modularity.
+              </p>
+            </div>
+            <div class="service-card-footer">
+              <span class="service-warranty-tag">Watertight Roof Guarantee</span>
+              <a href="#services" class="btn-view-project">
+                <span>Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card tilt-card">
+            <div class="service-card-head">
+              <div class="service-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="22.01"/><line x1="15" y1="22" x2="15" y2="22.01"/><line x1="12" y1="18" x2="12" y2="18.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="12" y1="6" x2="12" y2="6.01"/></svg>
+              </div>
+              <span class="service-badge-pill">Enterprise</span>
+            </div>
+            <div>
+              <h3 class="service-title">Commercial Solutions</h3>
+              <div class="service-tagline">Megawatt Scale & ESG Compliance</div>
+              <p class="service-desc">
+                Scalable clean energy systems, solar carports, and industrial battery integration designed to cut corporate peak utility charges.
+              </p>
+            </div>
+            <div class="service-card-footer">
+              <span class="service-warranty-tag">Peak-Shaving Automation</span>
+              <a href="#services" class="btn-view-project">
+                <span>Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="#services" class="btn btn-secondary">
+            <span>Explore All 6 Solar Services</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Featured Projects Showcase Preview -->
+    <section class="section-pad" id="sec-home-projects" style="background: #f1f6f3;">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>Proven Track Record</span>
+          </div>
+          <h2 class="section-title">Featured Clean Energy Projects</h2>
+          <p class="section-subtitle">
+            Explore our recently commissioned residential luxury estates, corporate campuses, and utility installations.
+          </p>
+        </div>
+
+        <!-- Featured Projects Preview Grid -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card tilt-card" data-project-id="residential-vista">
+            <div class="project-image-wrap">
+              <img src="/images/project-residential.jpg" alt="Silverado Luxury Eco-Estate" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <span class="project-pill">Residential Solar</span>
+                <div class="project-cap-badge">24.8 kWp</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Napa Valley, California</span>
+              </div>
+              <h3 class="project-title">Silverado Luxury Eco-Estate</h3>
+              <p class="project-desc">All-black integrated architectural roof panels with 40 kWh smart battery backup.</p>
+              <div class="project-footer">
+                <div class="project-stat-pill">
+                  <span class="stat-lbl">Offset</span>
+                  <span class="stat-num">27.2 Tons CO₂/yr</span>
+                </div>
+                <a href="#projects" class="btn-view-project">
+                  <span>View Project</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card tilt-card" data-project-id="commercial-solaris">
+            <div class="project-image-wrap">
+              <img src="/images/project-commercial.jpg" alt="Solaris Corporate Tech Campus" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <span class="project-pill">Commercial Solar</span>
+                <div class="project-cap-badge">650 kWp</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Silicon Valley, California</span>
+              </div>
+              <h3 class="project-title">Solaris Corporate Tech Campus</h3>
+              <p class="project-desc">Aerodynamic rooftop array & 40-bay bi-facial solar carports with Level-2 EV charging.</p>
+              <div class="project-footer">
+                <div class="project-stat-pill">
+                  <span class="stat-lbl">Offset</span>
+                  <span class="stat-num">720 Tons CO₂/yr</span>
+                </div>
+                <a href="#projects" class="btn-view-project">
+                  <span>View Project</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore All Portfolio Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: High Impact Global CTA -->
+    <section class="section-pad cta-section" id="sec-home-cta">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-box-glow"></div>
+          <h2 class="cta-title">Ready to Switch to Solar?</h2>
+          <p class="cta-subtitle">
+            Join hundreds of forward-thinking homeowners and commercial enterprises who generate clean, independent energy with Green Pulse.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="#contact" class="btn btn-gold">
+              <span>Talk to Our Experts</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn-secondary" style="color: #ffffff; background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.25);">
+              <span>Explore Services</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================================
+       PAGE 2: ABOUT US PAGE
+       ========================================================================= -->
+  <section id="page-about" class="page-view">
+    <div class="container section-pad" style="padding-top: 7rem;">
+      
+      <!-- About Hero Grid -->
+      <div class="about-hero-grid" id="sec-about-hero">
+        <div>
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>Our Company Story</span>
+          </div>
+          <h1 class="section-title" style="font-size: 3.2rem;">Building a Cleaner Future, One Project at a Time.</h1>
+          <p class="section-subtitle" style="margin-bottom: 1.5rem;">
+            Green Pulse Energy was established on a singular principle: clean energy should be reliable, high-efficiency, and seamlessly engineered for modern life.
+          </p>
+          <p style="color: var(--color-text-body); margin-bottom: 2rem; line-height: 1.7;">
+            We unite world-class electrical engineers, photovoltaic research scientists, and certified construction architects to deliver solar energy systems that outperform conventional utility power in both economic savings and environmental resilience.
+          </p>
+          
+          <div style="display: flex; gap: 1rem;">
+            <a href="#contact" class="btn btn-primary">
+              <span>Join Our Mission</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Installations</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3D Rotating Solar Energy Globe -->
+        <div class="about-globe-wrapper">
+          <div class="about-canvas-container" id="about-globe-canvas"></div>
+        </div>
+      </div>
+
+      <!-- Mission, Vision & Core Values -->
+      <div id="sec-about-mission" style="margin-top: 6rem;">
+        <div class="section-head">
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>Guiding Principles</span>
+          </div>
+          <h2 class="section-title">Mission, Vision & Core Values</h2>
+        </div>
+
+        <div class="why-solar-grid">
+          <div class="why-card tilt-card">
+            <div class="why-card-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="why-card-title">Our Mission</h3>
+            <p class="why-card-text">
+              Make clean energy accessible, practical, and economically superior for homeowners and modern enterprises worldwide.
+            </p>
+          </div>
+
+          <div class="why-card tilt-card">
+            <div class="why-card-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="why-card-title">Our Vision</h3>
+            <p class="why-card-text">
+              A future powered completely by clean, decentralized, and intelligent solar microgrids with zero fossil fuel reliance.
+            </p>
+          </div>
+
+          <div class="why-card tilt-card">
+            <div class="why-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="why-card-title">Uncompromising Quality</h3>
+            <p class="why-card-text">
+              We exclusively specify Tier-1 monocrystalline cells, micro-inverters, and stainless mounting hardware built for 30+ year lifespans.
+            </p>
+          </div>
+
+          <div class="why-card tilt-card">
+            <div class="why-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="why-card-title">Customer First & Transparency</h3>
+            <p class="why-card-text">
+              Complete transparency with LIDAR shade modeling, genuine production warranties, and direct engineer communication throughout.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Company Growth Timeline -->
+      <div id="sec-about-timeline" style="margin-top: 6rem;">
+        <div class="section-head">
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>Evolution of Innovation</span>
+          </div>
+          <h2 class="section-title">Our Growth Milestones</h2>
+          <p class="section-subtitle">From a specialized clean energy lab in 2014 to a recognized gigawatt-scale solar engineering leader.</p>
+        </div>
+
+        <div class="timeline-track">
+          <!-- 2014 -->
+          <div class="timeline-node">
+            <div class="timeline-marker">2014</div>
+            <div class="timeline-card">
+              <h4 class="timeline-year-title">Company Inception</h4>
+              <div class="timeline-year-sub">The Clean Spark</div>
+              <p class="timeline-year-desc">Founded with a mission to remove solar adoption friction using high-efficiency N-type modules.</p>
+            </div>
+          </div>
+
+          <!-- 2017 -->
+          <div class="timeline-node">
+            <div class="timeline-marker">2017</div>
+            <div class="timeline-card">
+              <h4 class="timeline-year-title">Commercial Expansion</h4>
+              <div class="timeline-year-sub">100+ Systems</div>
+              <p class="timeline-year-desc">Launched commercial solar carport and corporate campus solutions across the West Coast.</p>
+            </div>
+          </div>
+
+          <!-- 2020 -->
+          <div class="timeline-node">
+            <div class="timeline-marker">2020</div>
+            <div class="timeline-card">
+              <h4 class="timeline-year-title">Smart AI Hub</h4>
+              <div class="timeline-year-sub">IoT Telemetry</div>
+              <p class="timeline-year-desc">Integrated 24/7 cloud telemetry and predictive maintenance algorithms for maximum uptime.</p>
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="timeline-node">
+            <div class="timeline-marker">2023</div>
+            <div class="timeline-card">
+              <h4 class="timeline-year-title">Agrivoltaics</h4>
+              <div class="timeline-year-sub">Dual-Use Land</div>
+              <p class="timeline-year-desc">Pioneered single-axis tracking solar canopies over organic vineyards and eco-farms.</p>
+            </div>
+          </div>
+
+          <!-- 2026 -->
+          <div class="timeline-node">
+            <div class="timeline-marker" style="border-color: #f59e0b; color: #f59e0b;">2026</div>
+            <div class="timeline-card" style="border-color: rgba(245, 158, 11, 0.3);">
+              <h4 class="timeline-year-title">1+ Gigawatt Scale</h4>
+              <div class="timeline-year-sub" style="color: #f59e0b;">Clean Future</div>
+              <p class="timeline-year-desc">500+ installations commissioned and continuous innovation in next-gen solar technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership & Engineering Team -->
+      <div id="sec-about-team" style="margin-top: 6rem;">
+        <div class="section-head">
+          <div class="section-tag">
+            <span class="pulse-point"></span>
+            <span>Solar Pioneers</span>
+          </div>
+          <h2 class="section-title">Leadership & Engineering Team</h2>
+          <p class="section-subtitle">Meet the visionary scientists and master electrical engineers powering Green Pulse Energy.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Leader 1 -->
+          <div class="team-card tilt-card">
+            <div class="team-photo-wrap">
+              <img src="/images/team-ceo.jpg" alt="Dr. Elena Vance" class="team-photo" loading="lazy" />
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Dr. Elena Vance</h3>
+              <div class="team-role">Founder & Chief Executive Officer</div>
+              <div class="team-creds">Ph.D. Energy Engineering, Stanford</div>
+              <p class="team-bio">15+ years directing next-gen photovoltaic materials research and grid-scale solar transitions.</p>
+              <div class="team-quote">“Our goal is to engineer clean energy independence for generations to come.”</div>
+            </div>
+          </div>
+
+          <!-- Leader 2 -->
+          <div class="team-card tilt-card">
+            <div class="team-photo-wrap">
+              <img src="/images/team-cto.jpg" alt="Marcus Thorne" class="team-photo" loading="lazy" />
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Marcus Thorne</h3>
+              <div class="team-role">Chief Technology Officer & Lead Architect</div>
+              <div class="team-creds">M.S. Electrical Systems, MIT</div>
+              <p class="team-bio">Pioneered AI microgrid balancing algorithms and directed 500+ commercial solar installations.</p>
+              <div class="team-quote">“Software telemetry transforms solar into the most predictable asset on earth.”</div>
+            </div>
+          </div>
+
+          <!-- Leader 3 -->
+          <div class="team-card tilt-card">
+            <div class="team-photo-wrap">
+              <img src="/images/team-vp.jpg" alt="Priya Patel" class="team-photo" loading="lazy" />
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Priya Patel</h3>
+              <div class="team-role">VP of Solar Engineering & EPC</div>
+              <div class="team-creds">P.E. Structural & Electrical, UC Berkeley</div>
+              <p class="team-bio">Directs complex high-voltage utility and commercial rooftop EPC contracts with a 100% safety record.</p>
+              <div class="team-quote">“Precision engineering turns solar arrays into 30-year clean power plants.”</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       PAGE 3: SERVICES PAGE
+       ========================================================================= -->
+  <section id="page-services" class="page-view">
+    <div class="container section-pad" style="padding-top: 7rem;">
+      <div class="section-head" id="sec-services-hero">
+        <div class="section-tag">
+          <span class="pulse-point"></span>
+          <span>Engineered Excellence</span>
+        </div>
+        <h1 class="section-title">End-to-End Solar Services</h1>
+        <p class="section-subtitle">
+          Comprehensive renewable energy solutions engineered for architectural beauty, maximum photon efficiency, and lifetime reliability.
+        </p>
+      </div>
+
+      <!-- 6 Full Service Cards -->
+      <div class="services-grid" id="sec-services-grid">
+        
+        <!-- Service 1: Turnkey Solar Installation -->
+        <div class="service-card tilt-card">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+            </div>
+            <span class="service-badge-pill">Flagship</span>
+          </div>
+          <div>
+            <h3 class="service-title">Solar Installation</h3>
+            <div class="service-tagline">Residential & Commercial Turnkey</div>
+            <p class="service-desc">
+              Complete turnkey design and installation engineered for maximum photon capture, minimal aesthetic disruption, and rapid utility interconnection.
+            </p>
+            <ul class="service-features-list">
+              <li><span class="check">✓</span> Tier-1 N-Type TOPCon Mono Panels (22.8%+ efficiency)</li>
+              <li><span class="check">✓</span> Precision structural load & wind engineering</li>
+              <li><span class="check">✓</span> Concealed conduit runs & architectural flashings</li>
+              <li><span class="check">✓</span> Rapid municipal permitting & utility approval</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-warranty-tag">25-Yr Full Warranty</span>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Service 2: Solar Rooftop Systems -->
+        <div class="service-card tilt-card">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <span class="service-badge-pill">Popular</span>
+          </div>
+          <div>
+            <h3 class="service-title">Solar Rooftop Systems</h3>
+            <div class="service-tagline">Custom Architectural Arrays</div>
+            <p class="service-desc">
+              Custom rooftop solar systems designed around your roof's geometry with zero roof degradation and watertight flashing.
+            </p>
+            <ul class="service-features-list">
+              <li><span class="check">✓</span> Non-invasive flashing and waterproof anchoring</li>
+              <li><span class="check">✓</span> Micro-inverter per-panel MPPT tracking</li>
+              <li><span class="check">✓</span> Tesla, Enphase & SolarEdge smart integration</li>
+              <li><span class="check">✓</span> Sleek all-black frameless panel aesthetics</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-warranty-tag">Watertight Roof Guarantee</span>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Service 3: Commercial Solar Solutions -->
+        <div class="service-card tilt-card">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="22.01"/><line x1="15" y1="22" x2="15" y2="22.01"/><line x1="12" y1="18" x2="12" y2="18.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="12" y1="6" x2="12" y2="6.01"/></svg>
+            </div>
+            <span class="service-badge-pill">High ROI</span>
+          </div>
+          <div>
+            <h3 class="service-title">Commercial Solar Solutions</h3>
+            <div class="service-tagline">Scalable Clean Energy Enterprises</div>
+            <p class="service-desc">
+              Large-scale solar solutions for corporate campuses, factories, logistics hubs, and commercial centers to eliminate peak demand costs.
+            </p>
+            <ul class="service-features-list">
+              <li><span class="check">✓</span> Megawatt rooftop arrays & bi-facial carports</li>
+              <li><span class="check">✓</span> Automated peak-shaving battery storage (BESS)</li>
+              <li><span class="check">✓</span> ESG carbon accounting & compliance modeling</li>
+              <li><span class="check">✓</span> Zero-down PPA and capital leasing financing</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-warranty-tag">30-Yr Performance Assurance</span>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Service 4: Solar Consultation & Audits -->
+        <div class="service-card tilt-card">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span class="service-badge-pill">Free Audit</span>
+          </div>
+          <div>
+            <h3 class="service-title">Solar Consultation & Audits</h3>
+            <div class="service-tagline">Irradiance & Financial Modeling</div>
+            <p class="service-desc">
+              High-precision LIDAR 3D shade simulation, utility tariff analysis, and independent financial projections prior to capital investment.
+            </p>
+            <ul class="service-features-list">
+              <li><span class="check">✓</span> Drone LIDAR 3D roof scanning & sun-path analysis</li>
+              <li><span class="check">✓</span> 15-minute utility consumption interval modeling</li>
+              <li><span class="check">✓</span> Tax credit (ITC) & MACRS depreciation breakdown</li>
+              <li><span class="check">✓</span> Multi-vendor hardware comparison report</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-warranty-tag">Zero Obligation Feasibility</span>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Service 5: Solar Maintenance & O&M -->
+        <div class="service-card tilt-card">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="service-badge-pill">Max Uptime</span>
+          </div>
+          <div>
+            <h3 class="service-title">Solar Maintenance & Care</h3>
+            <div class="service-tagline">24/7 Remote Telemetry & Washing</div>
+            <p class="service-desc">
+              Proactive system inspection, automated IoT telemetry fault detection, infrared thermal scans, and eco-friendly panel washing.
+            </p>
+            <ul class="service-features-list">
+              <li><span class="check">✓</span> 24/7 AI-driven micro-inverter monitoring</li>
+              <li><span class="check">✓</span> Drone thermal imaging detecting micro-cracks</li>
+              <li><span class="check">✓</span> De-ionized water eco-friendly cleaning</li>
+              <li><span class="check">✓</span> Rapid 24-hour on-site technician dispatch</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-warranty-tag">99.8% Uptime SLA</span>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Service 6: Solar EPC Solutions -->
+        <div class="service-card tilt-card">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <span class="service-badge-pill">Turnkey EPC</span>
+          </div>
+          <div>
+            <h3 class="service-title">Solar EPC Solutions</h3>
+            <div class="service-tagline">Engineering, Procurement & Construction</div>
+            <p class="service-desc">
+              Turnkey engineering, equipment procurement, and construction delivery for utility-scale solar farms and institutional microgrids.
+            </p>
+            <ul class="service-features-list">
+              <li><span class="check">✓</span> Certified electrical & structural PE stamped designs</li>
+              <li><span class="check">✓</span> Direct Tier-1 manufacturer supply chain access</li>
+              <li><span class="check">✓</span> Substation & high-voltage grid interconnection</li>
+              <li><span class="check">✓</span> SCADA commissioning & COD grid handover</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-warranty-tag">Full Performance Bonded</span>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Get Started</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interactive "How Solar Works" Animated Energy Pipeline -->
+      <div class="energy-flow-container" id="sec-how-solar-works">
+        <div class="section-head" style="margin-bottom: 2rem;">
+          <div class="section-tag" style="background: rgba(16,185,129,0.2); color: #34d399;">
+            <span class="pulse-point"></span>
+            <span>Interactive Clean Energy Pipeline</span>
+          </div>
+          <h2 class="section-title" style="color: #ffffff;">How Solar Works: Step-by-Step</h2>
+          <p class="section-subtitle" style="color: var(--color-text-inverse-muted);">
+            Click each phase to inspect live conversion metrics, electron generation, and smart grid synchronization.
+          </p>
+        </div>
+
+        <!-- Stage Navigation Buttons -->
+        <div class="flow-nodes-nav">
+          <div class="flow-node active" data-stage="1">
+            <span class="flow-node-step">Phase 01</span>
+            <span class="flow-node-name">Sun (Photons)</span>
+          </div>
+          <div class="flow-node" data-stage="2">
+            <span class="flow-node-step">Phase 02</span>
+            <span class="flow-node-name">Solar Panels (DC)</span>
+          </div>
+          <div class="flow-node" data-stage="3">
+            <span class="flow-node-step">Phase 03</span>
+            <span class="flow-node-name">Smart Inverter (AC)</span>
+          </div>
+          <div class="flow-node" data-stage="4">
+            <span class="flow-node-step">Phase 04</span>
+            <span class="flow-node-name">Home / Business</span>
+          </div>
+          <div class="flow-node" data-stage="5">
+            <span class="flow-node-step">Phase 05</span>
+            <span class="flow-node-name">Clean Grid Export</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Stage Details Display -->
+        <div id="flow-stage-details"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       PAGE 4: OUR PROJECTS PAGE
+       ========================================================================= -->
+  <section id="page-projects" class="page-view">
+    <div class="container section-pad" style="padding-top: 7rem;">
+      <div class="section-head" id="sec-projects-hero">
+        <div class="section-tag">
+          <span class="pulse-point"></span>
+          <span>Verified Deployments</span>
+        </div>
+        <h1 class="section-title">Our Clean Energy Portfolio</h1>
+        <p class="section-subtitle">
+          Explore real-world solar systems delivering millions of kilowatt-hours of clean power across luxury residential, corporate, and industrial sites.
+        </p>
+      </div>
+
+      <!-- Filter Buttons & Projects Grid -->
+      <div id="sec-projects-gallery">
+        <div class="project-filters-bar">
+          <button class="project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="project-filter-btn" data-filter="residential">Residential</button>
+          <button class="project-filter-btn" data-filter="commercial">Commercial</button>
+          <button class="project-filter-btn" data-filter="industrial">Industrial</button>
+          <button class="project-filter-btn" data-filter="rooftop">Rooftop & Agri</button>
+        </div>
+
+        <!-- Dynamic Projects Grid (Populated by JS) -->
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       PAGE 5: CONTACT US PAGE
+       ========================================================================= -->
+  <section id="page-contact" class="page-view">
+    <div class="container section-pad" style="padding-top: 7rem;">
+      
+      <div class="section-head" id="sec-contact-hero">
+        <div class="section-tag">
+          <span class="pulse-point"></span>
+          <span>Initiate Your Clean Transition</span>
+        </div>
+        <h1 class="section-title">Let’s Build a Cleaner Future Together.</h1>
+        <p class="section-subtitle">
+          Schedule a comprehensive solar irradiance assessment or speak directly with our certified solar engineers.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Interactive Consultation Form -->
+        <div class="contact-form-wrap" id="sec-contact-form">
+          <form id="solar-contact-form">
+            <h3 class="form-title">Request a Free Solar Consultation</h3>
+            <p class="form-subtitle">Receive an engineering estimate and 3D shade simulation within 24 hours.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="(555) 019-2834" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-city">City / Postal Code *</label>
+                <input type="text" id="contact-city" class="form-input" placeholder="San Francisco, CA 94105" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-project-type">Project Type</label>
+                <select id="contact-project-type" class="form-select">
+                  <option value="residential">Residential Solar & Battery</option>
+                  <option value="commercial">Commercial Rooftop / Carport</option>
+                  <option value="industrial">Industrial / Utility EPC</option>
+                  <option value="maintenance">Maintenance & System Audit</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-requirement">Estimated Requirement</label>
+                <input type="text" id="contact-requirement" class="form-input" placeholder="e.g. 10 kW System / $300/mo bill" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Project Notes / Roof Details</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Tell us about your property, roof type, shading, or specific clean energy objectives..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.15rem; font-size: 1.05rem;">
+              <span>Request a Free Consultation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+
+          <!-- Interactive Success State (Hidden initially) -->
+          <div id="contact-success-state" class="success-box" style="display: none;">
+            <div class="success-icon-wrap">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 class="success-title">Consultation Request Confirmed!</h3>
+            <p class="success-desc">
+              Our lead solar engineering team has received your property details and is preparing a customized 3D solar irradiance model.
+            </p>
+            <div class="ref-pill">Booking Ref: <span id="consultation-ref-code">GPE-2026-8812</span></div>
+            <div>
+              <button class="btn btn-secondary" id="contact-reset-btn">
+                <span>Submit Another Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: 3D Floating Solar Core & Office Info Hub -->
+        <div class="contact-side-col" id="sec-contact-desk">
+          
+          <!-- 3D Interactive Solar Energy Prism Object -->
+          <div class="contact-3d-wrapper">
+            <div class="contact-canvas-container" id="contact-3d-canvas"></div>
+            <div class="contact-3d-caption">
+              <span class="telemetry-dot"></span>
+              <span>Interactive Photovoltaic Core (Cursor Reactive)</span>
+            </div>
+          </div>
+
+          <!-- Contact Details Card -->
+          <div class="contact-info-card">
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4 class="info-heading">Direct Telephone</h4>
+                <div class="info-detail">+1 (800) 473-3678 (Toll Free)</div>
+                <div class="info-detail">+1 (415) 890-7840 (Direct Engineering Desk)</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4 class="info-heading">Email Inquiries</h4>
+                <div class="info-detail">consult@greenpulseenergy.com</div>
+                <div class="info-detail">support@greenpulseenergy.com</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4 class="info-heading">Headquarters & Innovation Lab</h4>
+                <div class="info-detail">450 Mission Bay Boulevard South, Suite 800</div>
+                <div class="info-detail">San Francisco, CA 94158</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4 class="info-heading">Operating Hours</h4>
+                <div class="info-detail">Monday – Friday: 7:00 AM – 7:00 PM PST</div>
+                <div class="info-detail">Saturday: 8:00 AM – 4:00 PM PST (Emergency Dispatch 24/7)</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       PROJECT DETAIL INTERACTIVE MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="project-modal-close" aria-label="Close Project Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="project-modal-body"></div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       QUICK QUOTE MODAL (Header Trigger)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="quick-quote-modal">
+    <div class="modal-window" style="max-width: 540px; padding: 2.5rem;">
+      <button class="modal-close-btn" id="quick-quote-close" aria-label="Close Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      
+      <div class="section-tag" style="margin-bottom: 0.5rem;">
+        <span class="pulse-point"></span>
+        <span>Instant Solar Assessment</span>
+      </div>
+      <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Get Your Custom Solar Quote</h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+        Enter your details and our clean energy engineers will model your roof's solar potential.
+      </p>
+
+      <form id="modal-quote-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="you@domain.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Average Monthly Electric Bill</label>
+          <select class="form-select">
+            <option>$100 - $250 / month</option>
+            <option selected>$250 - $500 / month</option>
+            <option>$500 - $1,000 / month</option>
+            <option>$1,000+ / month (Commercial)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          <span>Request Custom Assessment</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       GLOBAL SITE FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Col -->
+        <div>
+          <a href="#home" class="brand-logo" style="color: #ffffff;">
+            <svg class="brand-icon" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="42" stroke="#10b981" stroke-width="3" stroke-dasharray="8 6" opacity="0.8"/>
+              <ellipse cx="50" cy="50" rx="46" ry="20" stroke="#059669" stroke-width="2" transform="rotate(-30 50 50)" opacity="0.6"/>
+              <path d="M50 16 L78 32 L78 68 L50 84 L22 68 L22 32 Z" fill="#061a11" stroke="#10b981" stroke-width="3"/>
+              <circle cx="50" cy="50" r="10" fill="#f59e0b"/>
+              <circle cx="50" cy="50" r="4" fill="#ffffff"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-title" style="color: #ffffff;">GREEN PULSE</span>
+              <span class="brand-tagline" style="color: #34d399;">ENERGY</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Empowering homeowners and forward-thinking enterprises with next-generation high efficiency solar technology and anti-gravity clean power architecture.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About Us</a></li>
+            <li><a href="#services" class="footer-nav-link">Services</a></li>
+            <li><a href="#projects" class="footer-nav-link">Our Projects</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Solar Services -->
+        <div>
+          <h4 class="footer-col-title">Solar Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Solar Rooftop Systems</a></li>
+            <li><a href="#services">Commercial Microgrids</a></li>
+            <li><a href="#services">Battery Energy Storage</a></li>
+            <li><a href="#services">24/7 AI Telemetry & Care</a></li>
+            <li><a href="#services">Turnkey EPC Solutions</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div>
+          <h4 class="footer-col-title">Clean Tech Digest</h4>
+          <p class="footer-newsletter-text">
+            Subscribe for solar tax credit updates, breakthrough photovoltaic innovations, and energy insights.
+          </p>
+          <form class="footer-subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed to Green Pulse Energy Insights!'); this.reset();">
+            <input type="email" placeholder="Your email address" class="footer-input" required />
+            <button type="submit" class="btn btn-primary" style="padding: 0.65rem 1.25rem;">
+              <span>Join</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Green Pulse Energy Inc. All Rights Reserved. Clean Energy for a Greener Tomorrow.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#home">Privacy Policy</a>
+          <a href="#home">Terms of Service</a>
+          <a href="#contact">Compliance & ESG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

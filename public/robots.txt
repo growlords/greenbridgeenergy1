@@ -1,0 +1,7 @@
+# Robots.txt for Green Pulse Energy
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://greenpulseenergy.com/sitemap.xml
