@@ -317,11 +317,12 @@ export function initEditorBridge() {
 
     // Reorder sections live in DOM
     if (type === 'GPE_REORDER_SECTIONS' && Array.isArray(orderedIds)) {
-      const homePageContainer = document.getElementById('page-home') || document.querySelector('main');
-      if (homePageContainer) {
+      const targetPageId = pageId || 'page-home';
+      const pageContainer = document.getElementById(targetPageId) || (targetPageId === 'page-home' ? document.querySelector('main') : null);
+      if (pageContainer) {
         orderedIds.forEach((secId) => {
           const secEl = document.getElementById(secId);
-          if (secEl) homePageContainer.appendChild(secEl);
+          if (secEl) pageContainer.appendChild(secEl);
         });
       }
     }

@@ -100,6 +100,26 @@ export const initialCMSData = {
       'sec-home-services',
       'sec-home-projects',
       'sec-home-cta'
+    ],
+    'page-about': [
+      'sec-about-hero',
+      'sec-about-mission',
+      'sec-about-timeline',
+      'sec-about-team'
+    ],
+    'page-services': [
+      'sec-services-hero',
+      'sec-services-grid',
+      'sec-how-solar-works'
+    ],
+    'page-projects': [
+      'sec-projects-hero',
+      'sec-projects-gallery'
+    ],
+    'page-contact': [
+      'sec-contact-hero',
+      'sec-contact-form',
+      'sec-contact-desk'
     ]
   },
 

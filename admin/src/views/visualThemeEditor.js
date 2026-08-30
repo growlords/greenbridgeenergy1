@@ -340,6 +340,108 @@ export function renderVisualThemeEditor(container, onBackToDashboard, initialPag
     }
   }
 
+  // Right Section Inspector Content
+  function renderSectionInspector(sec, pageId) {
+    const data = cmsStore.data;
+    const elements = data.elements || {};
+
+    if (sec.id === 'sec-calculator') {
+      const cur = data.currency || {};
+      return `
+        <div style="background: var(--admin-bg-elevated); padding: 0.85rem; border-radius: var(--admin-radius-sm); margin-bottom: 1rem; border: 1px solid var(--admin-border-subtle);">
+          <div style="font-size: 0.72rem; color: var(--admin-text-muted); text-transform: uppercase;">Selected Section</div>
+          <strong style="font-size: 0.95rem; color: var(--admin-accent-emerald);">${sec.icon || '🧮'} ${sec.name}</strong>
+          <div style="font-size: 0.7rem; color: var(--admin-text-muted); margin-top: 2px;">ID: #${sec.id} | Page: ${pageId}</div>
+        </div>
+
+        <div class="inspector-accordion-group">
+          <div class="inspector-group-title">Section Copy & Headlines</div>
+          <div class="adm-form-group">
+            <label class="adm-label">Section Tag</label>
+            <input type="text" class="adm-input" id="sec-inp-calc-tag" value="${elements['home.calc.tag'] || 'Precision Solar Modeling'}" />
+          </div>
+          <div class="adm-form-group">
+            <label class="adm-label">Heading Title</label>
+            <input type="text" class="adm-input" id="sec-inp-calc-title" value="${elements['home.calc.title'] || 'Estimate Your 25-Year Solar ROI'}" />
+          </div>
+          <div class="adm-form-group">
+            <label class="adm-label">Subtitle Description</label>
+            <textarea class="adm-textarea" id="sec-inp-calc-subtitle" style="min-height: 70px;">${elements['home.calc.subtitle'] || ''}</textarea>
+          </div>
+          <div class="adm-form-group">
+            <label class="adm-label">CTA Button Text</label>
+            <input type="text" class="adm-input" id="sec-inp-calc-btn" value="${elements['home.calc.btnText'] || 'Lock In This Estimate & Get Quote'}" />
+          </div>
+        </div>
+
+        <div class="inspector-accordion-group" style="margin-top: 1rem;">
+          <div class="inspector-group-title">Calculator Currency & Ranges</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <div class="adm-form-group">
+              <label class="adm-label">Currency Symbol</label>
+              <input type="text" class="adm-input" id="sec-cur-sym" value="${cur.symbol || '₹'}" />
+            </div>
+            <div class="adm-form-group">
+              <label class="adm-label">Currency Code</label>
+              <input type="text" class="adm-input" id="sec-cur-code" value="${cur.code || 'INR'}" />
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem;">
+            <div class="adm-form-group">
+              <label class="adm-label">Min Bill</label>
+              <input type="number" class="adm-input" id="sec-cur-min" value="${cur.minBill !== undefined ? cur.minBill : 500}" />
+            </div>
+            <div class="adm-form-group">
+              <label class="adm-label">Max Bill</label>
+              <input type="number" class="adm-input" id="sec-cur-max" value="${cur.maxBill !== undefined ? cur.maxBill : 10000000}" />
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem;">
+            <div class="adm-form-group">
+              <label class="adm-label">Slider Step</label>
+              <input type="number" class="adm-input" id="sec-cur-step" value="${cur.step !== undefined ? cur.step : 500}" />
+            </div>
+            <div class="adm-form-group">
+              <label class="adm-label">Default Bill</label>
+              <input type="number" class="adm-input" id="sec-cur-def" value="${cur.defaultBill || 4500}" />
+            </div>
+          </div>
+          <button class="btn-adm btn-adm-primary" id="btn-save-calc-sec" style="width: 100%; justify-content: center; margin-top: 0.75rem;">
+            Apply Calculator Settings
+          </button>
+        </div>
+      `;
+    }
+
+    // Generic Section Inspector
+    return `
+      <div style="background: var(--admin-bg-elevated); padding: 0.85rem; border-radius: var(--admin-radius-sm); margin-bottom: 1rem; border: 1px solid var(--admin-border-subtle);">
+        <div style="font-size: 0.72rem; color: var(--admin-text-muted); text-transform: uppercase;">Selected Section</div>
+        <strong style="font-size: 0.95rem; color: var(--admin-accent-emerald);">${sec.icon || '📄'} ${sec.name}</strong>
+        <div style="font-size: 0.7rem; color: var(--admin-text-muted); margin-top: 2px;">ID: #${sec.id} | Page: ${pageId}</div>
+      </div>
+
+      <div class="inspector-accordion-group">
+        <div class="inspector-group-title">Section Settings</div>
+        <div class="adm-form-group">
+          <label class="adm-label">Section Display Name</label>
+          <input type="text" class="adm-input" id="sec-prop-name" value="${sec.name}" />
+        </div>
+        <div class="adm-form-group">
+          <label class="adm-label">Section DOM ID</label>
+          <input type="text" class="adm-input" value="#${sec.id}" disabled style="opacity: 0.7;" />
+        </div>
+      </div>
+
+      <div class="inspector-accordion-group" style="margin-top: 1rem;">
+        <div class="inspector-group-title">Direct Canvas Editing</div>
+        <p style="font-size: 0.75rem; color: var(--admin-text-muted); line-height: 1.4;">
+          Click any text, badge, or button directly in the center preview to edit its copy in real-time.
+        </p>
+      </div>
+    `;
+  }
+
   // Right Inspector Content with Clean Progressive Disclosure
   function renderPropertiesInspector(elementKey, tagName) {
     const currentValue = cmsStore.getElementValue(elementKey, '');
@@ -431,10 +533,47 @@ export function renderVisualThemeEditor(container, onBackToDashboard, initialPag
     let draggedIndex = null;
 
     treeItems.forEach((item) => {
-      // 1. Click to scroll to section
+      // 1. Click to scroll to section & open section inspector
       item.addEventListener('click', (e) => {
         if (e.target.closest('.ve-tree-actions') || e.target.closest('.ve-tree-drag-handle')) return;
         const secId = item.dataset.sectionId;
+        treeItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+
+        const sec = page.sections?.find(s => s.id === secId) || { id: secId, name: 'Section' };
+        selectedElementKey = null;
+        
+        const inspectorBody = document.getElementById('ve-inspector-body');
+        if (inspectorBody) {
+          inspectorBody.innerHTML = renderSectionInspector(sec, activePageId);
+
+          // Listeners for calculator quick edit
+          if (sec.id === 'sec-calculator') {
+            document.getElementById('sec-inp-calc-tag')?.addEventListener('input', (ev) => {
+              cmsStore.setElementValue('home.calc.tag', ev.target.value);
+            });
+            document.getElementById('sec-inp-calc-title')?.addEventListener('input', (ev) => {
+              cmsStore.setElementValue('home.calc.title', ev.target.value);
+            });
+            document.getElementById('sec-inp-calc-subtitle')?.addEventListener('input', (ev) => {
+              cmsStore.setElementValue('home.calc.subtitle', ev.target.value);
+            });
+            document.getElementById('sec-inp-calc-btn')?.addEventListener('input', (ev) => {
+              cmsStore.setElementValue('home.calc.btnText', ev.target.value);
+            });
+            document.getElementById('btn-save-calc-sec')?.addEventListener('click', () => {
+              const symbol = document.getElementById('sec-cur-sym')?.value || '₹';
+              const code = document.getElementById('sec-cur-code')?.value || 'INR';
+              const minBill = parseFloat(document.getElementById('sec-cur-min')?.value) || 500;
+              const maxBill = parseFloat(document.getElementById('sec-cur-max')?.value) || 10000000;
+              const step = parseFloat(document.getElementById('sec-cur-step')?.value) || 500;
+              const defaultBill = parseFloat(document.getElementById('sec-cur-def')?.value) || 4500;
+              cmsStore.updateCurrency({ symbol, code, minBill, maxBill, step, defaultBill });
+              toast.success('Calculator settings updated!');
+            });
+          }
+        }
+
         if (iframe?.contentWindow) {
           iframe.contentWindow.postMessage({
             type: 'GPE_SCROLL_TO_SECTION',

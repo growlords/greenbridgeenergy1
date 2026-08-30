@@ -154,14 +154,18 @@ export function initCMSHydration() {
     }
 
     // 3. Section Order Hydration
-    if (data.sectionOrder && Array.isArray(data.sectionOrder['page-home'])) {
-      const homePageContainer = document.getElementById('page-home') || document.querySelector('main');
-      if (homePageContainer) {
-        data.sectionOrder['page-home'].forEach((secId) => {
-          const secEl = document.getElementById(secId);
-          if (secEl) homePageContainer.appendChild(secEl);
-        });
-      }
+    if (data.sectionOrder && typeof data.sectionOrder === 'object') {
+      Object.entries(data.sectionOrder).forEach(([pId, orderedIds]) => {
+        if (Array.isArray(orderedIds)) {
+          const pageContainer = document.getElementById(pId) || (pId === 'page-home' ? document.querySelector('main') : null);
+          if (pageContainer) {
+            orderedIds.forEach((secId) => {
+              const secEl = document.getElementById(secId);
+              if (secEl) pageContainer.appendChild(secEl);
+            });
+          }
+        }
+      });
     }
 
     // 4. Global Branding Fallbacks
