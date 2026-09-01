@@ -175,11 +175,19 @@ export function initGlobeScene(container) {
 
   function onResize() {
     if (!container) return;
-    camera.aspect = container.clientWidth / container.clientHeight;
+    const width = container.clientWidth || 300;
+    const height = container.clientHeight || 300;
+    camera.aspect = width / height;
+    if (width < 640) {
+      camera.position.set(0, 0, 7.2);
+    } else {
+      camera.position.set(0, 0, 5.8);
+    }
     camera.updateProjectionMatrix();
-    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setSize(width, height);
   }
   window.addEventListener('resize', onResize);
+  onResize();
 
   let clock = new THREE.Clock();
   let animId = null;
