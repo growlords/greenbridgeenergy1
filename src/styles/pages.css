@@ -896,6 +896,22 @@
   font-size: 0.85rem;
 }
 
+/* --- Sub-page Header & Spacing Utilities --- */
+.page-header-pad {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.about-hero-title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.section-sub-pad {
+  margin-top: 6rem;
+}
+
 /* --- About Us Page Layouts --- */
 .about-hero-grid {
   display: grid;
@@ -1359,6 +1375,16 @@
 }
 
 @media (max-width: 1024px) {
+  .page-header-pad {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  .about-hero-title {
+    font-size: 2.6rem;
+  }
+  .section-sub-pad {
+    margin-top: 4.5rem;
+  }
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1397,6 +1423,16 @@
 }
 
 @media (max-width: 640px) {
+  .page-header-pad {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .about-hero-title {
+    font-size: 2.1rem;
+  }
+  .section-sub-pad {
+    margin-top: 3.5rem;
+  }
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -1467,12 +1503,27 @@
 }
 
 @media (max-width: 480px) {
+  .page-header-pad {
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+  }
+  .about-hero-title {
+    font-size: 1.85rem;
+    line-height: 1.2;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+  .section-sub-pad {
+    margin-top: 2.5rem;
+  }
   .section-pad {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
   .section-title {
     font-size: 1.85rem;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
   .section-subtitle {
     font-size: 0.95rem;
@@ -1530,6 +1581,9 @@
 }
 
 @media (max-width: 360px) {
+  .about-hero-title {
+    font-size: 1.65rem;
+  }
   .calc-metrics-quad, .stage-metrics-grid, .modal-stats-bar {
     grid-template-columns: 1fr;
   }
