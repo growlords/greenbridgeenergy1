@@ -1,4 +1,4 @@
-// Green Pulse Energy - Visual Editor Iframe Bridge
+// Green Bridge Energy - Visual Editor Iframe Bridge
 // Activates when loaded inside the Admin Visual Theme Editor or with ?editor=true
 
 export function initEditorBridge() {

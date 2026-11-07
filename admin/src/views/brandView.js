@@ -77,7 +77,7 @@ export function renderBrandView(container) {
 
           <div style="display: flex; justify-content: space-between; align-items: center;">
             <div>
-              <strong>Vibrant Emerald Pulse (Accent)</strong>
+              <strong>Vibrant Emerald Accent</strong>
               <div style="font-size: 0.75rem; color: var(--admin-text-muted);">Primary button & glow accent</div>
             </div>
             <input type="color" id="col-accent-emerald" value="${branding.colors.accentEmerald}" style="width: 42px; height: 32px; border: none; cursor: pointer; border-radius: 4px;" />

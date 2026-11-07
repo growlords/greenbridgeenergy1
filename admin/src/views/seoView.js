@@ -90,9 +90,9 @@ export function renderSeoView(container) {
             </div>
 
             <div style="background: #ffffff; padding: 1.25rem; border-radius: 8px; font-family: arial, sans-serif;">
-              <div style="font-size: 0.8rem; color: #202124; margin-bottom: 2px;">https://greenpulseenergy.com${page.slug}</div>
+              <div style="font-size: 0.8rem; color: #202124; margin-bottom: 2px;">https://greenbridgeenergy.com${page.slug}</div>
               <h4 style="font-size: 1.15rem; color: #1a0dab; margin-bottom: 4px; font-weight: normal;" id="google-snippet-title">
-                ${seo.title || 'Green Pulse Energy'}
+                ${seo.title || 'Green Bridge Energy'}
               </h4>
               <p style="font-size: 0.82rem; color: #4d5156; line-height: 1.4;" id="google-snippet-desc">
                 ${seo.description || 'Solar energy systems and clean power.'}
@@ -111,8 +111,8 @@ export function renderSeoView(container) {
                 <img src="${seo.ogImage || '/images/project-residential.jpg'}" alt="Preview" style="width: 100%; height: 100%; object-fit: cover;" />
               </div>
               <div style="padding: 1rem; background: var(--admin-bg-elevated);">
-                <div style="font-size: 0.72rem; color: var(--admin-text-muted); text-transform: uppercase;">greenpulseenergy.com</div>
-                <strong style="font-size: 0.95rem; color: #ffffff; display: block; margin: 3px 0;" id="social-card-title">${seo.title || 'Green Pulse Energy'}</strong>
+                <div style="font-size: 0.72rem; color: var(--admin-text-muted); text-transform: uppercase;">greenbridgeenergy.com</div>
+                <strong style="font-size: 0.95rem; color: #ffffff; display: block; margin: 3px 0;" id="social-card-title">${seo.title || 'Green Bridge Energy'}</strong>
                 <p style="font-size: 0.78rem; color: var(--admin-text-secondary);" id="social-card-desc">${seo.description || ''}</p>
               </div>
             </div>

@@ -1,4 +1,4 @@
-// Comprehensive Central CMS Schema & Seed Data for Green Pulse Energy
+// Comprehensive Central CMS Schema & Seed Data for Green Bridge Energy
 export const initialCMSData = {
   meta: {
     version: 'v2.6.0',
@@ -28,9 +28,9 @@ export const initialCMSData = {
   // 2. Granular Key-Value Element Dictionary (Exact 1-to-1 Element Targeting)
   elements: {
     // Global
-    'global.branding.companyName': 'GREEN PULSE ENERGY',
+    'global.branding.companyName': 'GREEN BRIDGE ENERGY',
     'global.branding.tagline': 'THE FUTURE OF CLEAN SOLAR TECHNOLOGY',
-    'global.nav.copyright': '© 2026 Green Pulse Energy Inc. All Rights Reserved. Clean Energy Engineered for Generations.',
+    'global.nav.copyright': '© 2026 Green Bridge Energy Inc. All Rights Reserved. Clean Energy Engineered for Generations.',
 
     // Home Page Hero
     'home.hero.badge': 'Next-Generation Photovoltaics',
@@ -40,7 +40,7 @@ export const initialCMSData = {
     'home.hero.cta2Text': 'Get a Free Consultation',
 
     // Home Page Why Solar
-    'home.whySolar.tag': 'The Green Pulse Advantage',
+    'home.whySolar.tag': 'The Green Bridge Advantage',
     'home.whySolar.title': 'Clean Energy. Smart Investment. Better Future.',
     'home.whySolar.subtitle': 'Transitioning to solar is not just an ecological choice — it is an intelligent financial asset providing lifetime energy security.',
     'home.whySolar.card0Title': 'Lower Electricity Costs',
@@ -70,7 +70,7 @@ export const initialCMSData = {
 
     // Home Page CTA
     'home.cta.title': 'Ready to Switch to Solar?',
-    'home.cta.subtitle': 'Join hundreds of forward-thinking homeowners and commercial enterprises who generate clean, independent energy with Green Pulse.',
+    'home.cta.subtitle': 'Join hundreds of forward-thinking homeowners and commercial enterprises who generate clean, independent energy with Green Bridge.',
     'home.cta.btnText': 'Talk to Our Experts',
 
     // About Us Page
@@ -125,7 +125,7 @@ export const initialCMSData = {
 
   // 4. Global Branding & Colors
   branding: {
-    companyName: 'Green Pulse Energy',
+    companyName: 'Green Bridge Energy',
     tagline: 'The Future of Clean Solar Technology',
     logoMain: '/favicon.svg',
     favicon: '/favicon.svg',
@@ -158,11 +158,11 @@ export const initialCMSData = {
       inNavigation: true,
       order: 1,
       seo: {
-        title: 'Green Pulse Energy | The Future of Clean Solar Technology',
+        title: 'Green Bridge Energy | The Future of Clean Solar Technology',
         description: 'High-efficiency architectural solar panels and intelligent clean energy solutions.',
         keywords: 'solar energy, photovoltaic panels, clean energy',
         ogImage: '/images/project-residential.jpg',
-        canonicalUrl: 'https://greenpulseenergy.com/'
+        canonicalUrl: 'https://greenbridgeenergy.com/'
       },
       sections: [
         { id: 'hero-section', name: 'Hero: 3D Solar Array & Telemetry', icon: '⚡' },
@@ -182,11 +182,11 @@ export const initialCMSData = {
       inNavigation: true,
       order: 2,
       seo: {
-        title: 'About Us | Green Pulse Energy',
+        title: 'About Us | Green Bridge Energy',
         description: 'Pioneering clean energy innovation and sustainability.',
-        keywords: 'about green pulse energy, solar leadership',
+        keywords: 'about green bridge energy, solar leadership',
         ogImage: '/images/team-ceo.jpg',
-        canonicalUrl: 'https://greenpulseenergy.com/#about'
+        canonicalUrl: 'https://greenbridgeenergy.com/#about'
       },
       sections: [
         { id: 'sec-about-hero', name: 'About Hero & 3D Rotating Globe', icon: '🌍' },
@@ -203,11 +203,11 @@ export const initialCMSData = {
       inNavigation: true,
       order: 3,
       seo: {
-        title: 'Solar Engineering Services | Green Pulse Energy',
+        title: 'Solar Engineering Services | Green Bridge Energy',
         description: 'Turnkey solar installations and commercial microgrids.',
         keywords: 'solar installation services, residential rooftop',
         ogImage: '/images/project-commercial.jpg',
-        canonicalUrl: 'https://greenpulseenergy.com/#services'
+        canonicalUrl: 'https://greenbridgeenergy.com/#services'
       },
       sections: [
         { id: 'sec-services-hero', name: 'Services Hero Banner', icon: '⚡' },
@@ -223,11 +223,11 @@ export const initialCMSData = {
       inNavigation: true,
       order: 4,
       seo: {
-        title: 'Verified Solar Case Studies | Green Pulse Energy',
+        title: 'Verified Solar Case Studies | Green Bridge Energy',
         description: 'Verified residential and commercial case studies.',
         keywords: 'solar projects portfolio, solar case studies',
         ogImage: '/images/project-industrial.jpg',
-        canonicalUrl: 'https://greenpulseenergy.com/#projects'
+        canonicalUrl: 'https://greenbridgeenergy.com/#projects'
       },
       sections: [
         { id: 'sec-projects-hero', name: 'Projects Hero Banner', icon: '🏗️' },
@@ -242,11 +242,11 @@ export const initialCMSData = {
       inNavigation: true,
       order: 5,
       seo: {
-        title: 'Contact Green Pulse Energy | Get a Solar Quote',
+        title: 'Contact Green Bridge Energy | Get a Solar Quote',
         description: 'Request a free solar assessment.',
         keywords: 'contact solar company, get solar quote',
         ogImage: '/images/team-ceo.jpg',
-        canonicalUrl: 'https://greenpulseenergy.com/#contact'
+        canonicalUrl: 'https://greenbridgeenergy.com/#contact'
       },
       sections: [
         { id: 'sec-contact-hero', name: 'Contact Hero & 3D Refraction Prism', icon: '💎' },
@@ -435,7 +435,7 @@ export const initialCMSData = {
     { id: 'med-5', name: 'team-ceo.jpg', title: 'Dr. Elena Vance - CEO', url: '/images/team-ceo.jpg', category: 'team', size: '420 KB', dimensions: '800x800', uploadedAt: '2026-08-30' },
     { id: 'med-6', name: 'team-cto.jpg', title: 'Marcus Sterling - CTO', url: '/images/team-cto.jpg', category: 'team', size: '410 KB', dimensions: '800x800', uploadedAt: '2026-08-30' },
     { id: 'med-7', name: 'team-vp.jpg', title: 'Sarah Jenkins - VP Ops', url: '/images/team-vp.jpg', category: 'team', size: '390 KB', dimensions: '800x800', uploadedAt: '2026-08-30' },
-    { id: 'med-8', name: 'logo.svg', title: 'Green Pulse Energy Logo', url: '/favicon.svg', category: 'branding', size: '12 KB', dimensions: 'SVG Vector', uploadedAt: '2026-08-30' }
+    { id: 'med-8', name: 'logo.svg', title: 'Green Bridge Energy Logo', url: '/favicon.svg', category: 'branding', size: '12 KB', dimensions: 'SVG Vector', uploadedAt: '2026-08-30' }
   ],
 
   // 9. Navigation & Footer
@@ -448,7 +448,7 @@ export const initialCMSData = {
       { id: 'nav-5', label: 'Contact Us', link: '#contact', visible: true }
     ],
     ctaButton: { label: 'Get a Quote', link: '#contact', visible: true },
-    copyright: '© 2026 Green Pulse Energy Inc. All Rights Reserved. Clean Energy Engineered for Generations.'
+    copyright: '© 2026 Green Bridge Energy Inc. All Rights Reserved. Clean Energy Engineered for Generations.'
   },
 
   // 10. Version History Snapshots

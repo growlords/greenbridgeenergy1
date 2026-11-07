@@ -24,7 +24,7 @@
   <path d="M50 18 L50 82" stroke="url(#gpe-grad)" stroke-width="1.5" opacity="0.7"/>
   <path d="M24 33 L76 67" stroke="url(#gpe-grad)" stroke-width="1.2" opacity="0.5"/>
   <path d="M24 67 L76 33" stroke="url(#gpe-grad)" stroke-width="1.2" opacity="0.5"/>
-  <!-- Central Pulse Energy Core -->
+  <!-- Central Energy Core -->
   <circle cx="50" cy="50" r="11" fill="url(#gold-grad)" filter="url(#glow)"/>
   <circle cx="50" cy="50" r="5" fill="#ffffff"/>
   <!-- Orbiting photon nodes -->

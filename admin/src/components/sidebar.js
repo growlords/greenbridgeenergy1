@@ -5,7 +5,7 @@ export function renderSidebar(container, activeView, onNavigate) {
   if (!container) return;
 
   const data = cmsStore.data;
-  const user = authManager.currentUser || { name: 'Admin', email: 'admin@greenpulse.energy' };
+  const user = authManager.currentUser || { name: 'Admin', email: 'admin@greenbridge.energy' };
 
   container.innerHTML = `
     <!-- Header -->
@@ -16,7 +16,7 @@ export function renderSidebar(container, activeView, onNavigate) {
           <path d="M50 16 L78 32 L78 68 L50 84 L22 68 L22 32 Z" fill="#061a11" stroke="#10b981" stroke-width="3"/>
           <circle cx="50" cy="50" r="10" fill="#f59e0b"/>
         </svg>
-        <span>GREEN PULSE</span>
+        <span>GREEN BRIDGE</span>
         <span class="sidebar-brand-badge">CMS</span>
       </div>
     </div>

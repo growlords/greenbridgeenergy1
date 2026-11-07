@@ -79,7 +79,7 @@ export function renderSettingsView(container) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `green-pulse-energy-cms-${new Date().toISOString().split('T')[0]}.json`;
+    a.download = `green-bridge-energy-cms-${new Date().toISOString().split('T')[0]}.json`;
     a.click();
     toast.success('Downloaded CMS backup file');
   });

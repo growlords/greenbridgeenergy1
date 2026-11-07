@@ -76,19 +76,19 @@ class AdminApp {
               <path d="M50 16 L78 32 L78 68 L50 84 L22 68 L22 32 Z" fill="#061a11" stroke="#10b981" stroke-width="3"/>
               <circle cx="50" cy="50" r="10" fill="#f59e0b"/>
             </svg>
-            <h2 class="auth-title">Green Pulse Admin</h2>
+            <h2 class="auth-title">Green Bridge Admin</h2>
             <p class="auth-subtitle">Clean Energy Content Management System</p>
           </div>
 
           <form id="admin-login-form" style="display: flex; flex-direction: column; gap: 1rem;">
             <div class="adm-form-group" style="margin-bottom: 0;">
               <label class="adm-label">Email Address</label>
-              <input type="email" id="login-email" class="adm-input" value="admin@greenpulse.energy" required />
+              <input type="email" id="login-email" class="adm-input" value="admin@greenbridge.energy" required />
             </div>
 
             <div class="adm-form-group" style="margin-bottom: 0;">
               <label class="adm-label">Password</label>
-              <input type="password" id="login-password" class="adm-input" value="GreenPulse2026!" required />
+              <input type="password" id="login-password" class="adm-input" value="GreenBridge2026!" required />
             </div>
 
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--admin-text-secondary);">
@@ -106,8 +106,8 @@ class AdminApp {
 
           <div class="auth-demo-badge">
             <strong>Demo Credentials:</strong><br/>
-            Email: <code>admin@greenpulse.energy</code><br/>
-            Password: <code>GreenPulse2026!</code>
+            Email: <code>admin@greenbridge.energy</code><br/>
+            Password: <code>GreenBridge2026!</code>
           </div>
         </div>
       </div>

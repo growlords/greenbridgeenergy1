@@ -17,7 +17,7 @@ class AuthManager {
     }
     return {
       name: 'Dr. Elena Vance',
-      email: 'admin@greenpulse.energy',
+      email: 'admin@greenbridge.energy',
       role: 'Chief Administrator & Clean Tech Lead',
       avatar: '/images/team-ceo.jpg'
     };
@@ -26,7 +26,7 @@ class AuthManager {
   login(email, password, remember = true) {
     // Standard verification with demo credentials helper
     if (
-      (email.toLowerCase() === 'admin@greenpulse.energy' && password === 'GreenPulse2026!') ||
+      (email.toLowerCase() === 'admin@greenbridge.energy' && password === 'GreenBridge2026!') ||
       (email.toLowerCase() === 'admin' && password === 'admin') ||
       (email.includes('@') && password.length >= 6)
     ) {
@@ -55,7 +55,7 @@ class AuthManager {
 
     return {
       success: false,
-      message: 'Invalid credentials. You can use admin@greenpulse.energy / GreenPulse2026!'
+      message: 'Invalid credentials. You can use admin@greenbridge.energy / GreenBridge2026!'
     };
   }
 

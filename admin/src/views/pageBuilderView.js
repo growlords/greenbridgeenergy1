@@ -520,7 +520,7 @@ export function renderPageBuilderView(container, initialPageId = null) {
           type,
           name: names[type] || 'New Section',
           title: names[type] || 'New Section',
-          subtitle: 'Configurable section for Green Pulse Energy.'
+          subtitle: 'Configurable section for Green Bridge Energy.'
         });
         toast.success(`Added ${names[type]} to page`);
         render();

@@ -33,7 +33,7 @@ export function initContactForm(contact3dController) {
 
     setTimeout(() => {
       // Generate clean reference ID
-      const randomRef = 'GPE-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
+      const randomRef = 'GBE-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
       if (refCodeSpan) refCodeSpan.textContent = randomRef;
 
       // Confetti blast celebration
